@@ -1,9 +1,10 @@
 const hamburgerBtn = document.querySelector('.hamburger')
-
+const nav = document.querySelector('.nav')
 const footerYear = document.querySelector('.footer__year')
 
 const hamburgerAnimation = () => {
 	hamburgerBtn.classList.toggle('is-active')
+	nav.classList.toggle('nav-mobile--active')
 }
 
 const addYear = () => {
