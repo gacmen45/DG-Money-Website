@@ -32,6 +32,10 @@ h1.company-name {
 	width: 100%;
 }
 
+.sticky-body{
+	overflow: hidden;
+}
+
 // header 
 .header {
     display: grid;
@@ -119,6 +123,8 @@ h1.company-name {
         left: 0;
         right: 0;
         bottom: 0;
+		height: 100vh;
+		width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -130,6 +136,7 @@ h1.company-name {
 
         &--active {
             transform: translateX(0);
+			overflow: hidden;
         }
     }
 
@@ -152,6 +159,8 @@ h1.company-name {
             color: $gold;
         }
     }
+
+
 }
 
 //MEDIA QUERIES

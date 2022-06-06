@@ -1,3 +1,73 @@
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 0.5;
+  }
+  to {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-right {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
+@keyframes rotate-left {
+  from {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,6 +98,10 @@ h1.company-name {
   margin: 0 auto;
   max-width: 1200px;
   width: 100%;
+}
+
+.sticky-body {
+  overflow: hidden;
 }
 
 .header {
@@ -129,6 +203,8 @@ h1.company-name {
   left: 0;
   right: 0;
   bottom: 0;
+  height: 100vh;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,6 +231,7 @@ h1.company-name {
 .nav-mobile--active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
+  overflow: hidden;
 }
 
 .nav-desktop {
@@ -186,7 +263,7 @@ h1.company-name {
     height: 4px;
   }
   h1.company-name {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
   .header {
     -ms-grid-rows: auto (1fr)[2];
@@ -282,6 +359,12 @@ h1.company-name {
   }
   .hamburger {
     display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__text p {
+    font-size: 2.2rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

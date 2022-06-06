@@ -9,7 +9,7 @@
     }
 
     h1.company-name {
-        font-size: 6rem;
+        font-size: 5.5rem;
     }
 
     .header {
@@ -105,5 +105,16 @@
 
     .hamburger {
         display: none;
+    }
+}
+
+
+@media(min-width:1200px){
+    .header{
+        &__text {
+            p{
+                font-size: 2.2rem;
+            }
+        }
     }
 }
